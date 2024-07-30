@@ -1,7 +1,7 @@
 .chat {
 	position: fixed;
 	bottom: 0;
-	right: 30px;
+	left: 30px;
 	display: flex;
 	max-width: calc(100% - 60px);
 	width: 700px;
@@ -13,7 +13,7 @@
 	transition: transform 0.3s ease;
 
 	@include max(t) {
-		right: 10px;
+		left: 10px;
 		max-width: calc(100% - 20px);
 	}
 
@@ -24,7 +24,7 @@
 	&__label {
 		position: absolute;
 		top: -40px;
-		right: 20px;
+		left: 10px;
 		width: 120px;
 		height: 40px;
 		padding: 0 15px;

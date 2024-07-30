@@ -30,11 +30,17 @@
 		background: linear-gradient(325deg, #2a8bf2 14.76%, #7cb8f7 87.3%);
 		border-radius: 50%;
 		overflow: hidden;
+		transition: 0.3s ease;
 		box-shadow: 4px 4px 25px rgba(42, 139, 242, 0.15), 2px 2px 25px rgba(42, 139, 242, 0.05), 4px 6px 10px rgba(42, 139, 242, 0.15);
 		cursor: pointer;
 
+		&:hover {
+			opacity: 0.8;
+		}
+
 		svg {
 			color: $white;
+			transform: translateX(-2px) rotate(45deg);
 		}
 	}
 }
