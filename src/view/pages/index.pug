@@ -1,0 +1,88 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'Chat'
+		};
+
+block main
+	section.chat
+		.chat__label
+			+icon('chat')(width='30', height='30')
+			span Чат
+			.chat__new-messages-count.new-messages-count 10
+		.chat__users
+			.chat__user(data-id='qwerty1')
+				.user(style='background-color: #f70c9d;')
+					span.first-name А
+					span.second-name Б
+					.user__new-messages-count.new-messages-count 3
+				.chat__user-group
+					.chat__user-name Афанасий Борисенко
+					.chat__user-last-message Hello! Finally found the time to write to you) I need your help in creating. Hello! Finally found the time to write to you) I need your help in creating
+				.chat__time 10:30
+			.chat__user(data-id='qwerty2')
+				.user(style='background-color: #4d0cf0;')
+					span.first-name В
+					span.second-name Г
+					.user__new-messages-count.new-messages-count 7
+				.chat__user-group
+					.chat__user-name Валерий Гваделупа
+					.chat__user-last-message Hello! Finally found the time to write to you) I need your help in creating
+				.chat__time 10:30
+			.chat__user(data-id='qwerty3')
+				.user(style='background-color: #0c98f0;')
+					span.first-name Д
+					span.second-name Е
+				.chat__user-group
+					.chat__user-name Дмитрий Ерохин
+					.chat__user-last-message Hello! Finally found the time to write to you) I need your help in creating
+				.chat__time 10:30
+			.chat__user(data-id='qwerty4')
+				.user(style='background-color: #ff2929;')
+					span.first-name Ж
+					span.second-name З
+				.chat__user-group
+					.chat__user-name Жанна Зелёная
+					.chat__user-last-message Hello! Finally found the time to write to you) I need your help in creating
+				.chat__time 10:30
+		.chat__dialog
+			.user-info
+				.user-info__left
+					.user(style='background-color: #f70c9d;')
+						span.first-name А
+						span.second-name Б
+					.user-info__group
+						.user-info__name Афанасий Борисенко
+						.user-info__status.user-info__status--offline Не в сети
+				.user-info__right
+					.user-info__close
+						+icon('close')(width='24', height='24')
+			.dialog
+				.dialog-row
+					.dialog-row__text.
+						Hello! Finally found the time to write to you) I need your help in creating
+						interactive animations for my mobile application.
+					.dialog-row__time 10:30
+				.dialog-row
+					.dialog-row__text Can I send you files?
+					.dialog-row__time 10:31
+				.dialog-row.dialog-row--personal
+					.dialog-row__text Hey! Okay, send out.
+					.dialog-row__time 11:14
+				.dialog-row
+					.dialog-row__text.
+						Hello! Finally found the time to write to you) I need your help in creating
+						interactive animations for my mobile application.
+					.dialog-row__time 10:30
+				.dialog-row
+					.dialog-row__text Can I send you files?
+					.dialog-row__time 10:31
+				.dialog-row.dialog-row--personal
+					.dialog-row__text Hey! Okay, send out.
+					.dialog-row__time 11:14
+			.send
+				input.send__input(type='text', placeholder='Написать сообщение')
+				button.send__button
+					+icon('send')(width='24', height='24')

@@ -1,0 +1,73 @@
+.user-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 25px;
+	border-top-right-radius: 20px;
+	background-color: $grey-fa;
+	border-bottom: 2px solid rgba(112, 124, 151, 0.1);
+
+	@include max(t) {
+		gap: 10px;
+		padding: 10px;
+	}
+
+	&__left {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		@include max(t) {
+			gap: 10px;
+		}
+	}
+
+	&__name {
+		font-size: 18px;
+		line-height: 1.2;
+		text-transform: capitalize;
+
+		@include max(t) {
+			font-size: 16px;
+		}
+	}
+
+	&__status {
+		color: $green;
+		font-size: 14px;
+		margin-top: 5px;
+
+		&--offline {
+			color: $red;
+		}
+	}
+
+	&__close {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		background-color: $white;
+		border-radius: 50%;
+		overflow: hidden;
+		box-shadow: 0 10px 15px rgba(0, 0, 0, 0.03), 0 7px 25px rgba(42, 139, 242, 0.03), 0 5px 25px rgba(42, 139, 242, 0.07);
+		cursor: pointer;
+
+		@include max(t) {
+			align-self: flex-start;
+			width: 25px;
+			height: 25px;
+			padding: 3px;
+		}
+
+		&:hover svg {
+			transform: scale(-1, 1);
+		}
+
+		svg {
+			transition: 0.3s ease;
+		}
+	}
+}

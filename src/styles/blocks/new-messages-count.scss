@@ -1,0 +1,11 @@
+.new-messages-count {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 18px;
+	max-width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: $red;
+	font-size: 9px;
+}

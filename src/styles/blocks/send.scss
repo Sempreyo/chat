@@ -1,0 +1,40 @@
+.send {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	width: calc(100% - 20px);
+	height: 90px;
+	margin: 0 10px;
+	border-top: 2px solid rgba(112, 124, 151, 0.15);
+
+	&__input {
+		flex-grow: 1;
+		height: 100%;
+		padding-left: 10px;
+		color: $black;
+		font-size: 16px;
+
+		&::placeholder {
+			color: rgba(0, 0, 0, 0.3);
+			font-size: 16px;
+		}
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		background: linear-gradient(325deg, #2a8bf2 14.76%, #7cb8f7 87.3%);
+		border-radius: 50%;
+		overflow: hidden;
+		box-shadow: 4px 4px 25px rgba(42, 139, 242, 0.15), 2px 2px 25px rgba(42, 139, 242, 0.05), 4px 6px 10px rgba(42, 139, 242, 0.15);
+		cursor: pointer;
+
+		svg {
+			color: $white;
+		}
+	}
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.min.css" rel="stylesheet" type="text/css">
+    <title>Chat</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="chat">
+        <div class="chat__label">
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#chat"></use>
+          </svg><span>Чат</span>
+          <div class="chat__new-messages-count new-messages-count">10</div>
+        </div>
+        <div class="chat__users">
+          <div class="chat__user" data-id="qwerty1">
+            <div class="user" style="background-color: #f70c9d;"><span class="first-name">А</span><span class="second-name">Б</span>
+              <div class="user__new-messages-count new-messages-count">3</div>
+            </div>
+            <div class="chat__user-group">
+              <div class="chat__user-name">Афанасий Борисенко</div>
+              <div class="chat__user-last-message">Hello! Finally found the time to write to you) I need your help in creating. Hello! Finally found the time to write to you) I need your help in creating</div>
+            </div>
+            <div class="chat__time">10:30</div>
+          </div>
+          <div class="chat__user" data-id="qwerty2">
+            <div class="user" style="background-color: #4d0cf0;"><span class="first-name">В</span><span class="second-name">Г</span>
+              <div class="user__new-messages-count new-messages-count">7</div>
+            </div>
+            <div class="chat__user-group">
+              <div class="chat__user-name">Валерий Гваделупа</div>
+              <div class="chat__user-last-message">Hello! Finally found the time to write to you) I need your help in creating</div>
+            </div>
+            <div class="chat__time">10:30</div>
+          </div>
+          <div class="chat__user" data-id="qwerty3">
+            <div class="user" style="background-color: #0c98f0;"><span class="first-name">Д</span><span class="second-name">Е</span></div>
+            <div class="chat__user-group">
+              <div class="chat__user-name">Дмитрий Ерохин</div>
+              <div class="chat__user-last-message">Hello! Finally found the time to write to you) I need your help in creating</div>
+            </div>
+            <div class="chat__time">10:30</div>
+          </div>
+          <div class="chat__user" data-id="qwerty4">
+            <div class="user" style="background-color: #ff2929;"><span class="first-name">Ж</span><span class="second-name">З</span></div>
+            <div class="chat__user-group">
+              <div class="chat__user-name">Жанна Зелёная</div>
+              <div class="chat__user-last-message">Hello! Finally found the time to write to you) I need your help in creating</div>
+            </div>
+            <div class="chat__time">10:30</div>
+          </div>
+        </div>
+        <div class="chat__dialog">
+          <div class="user-info">
+            <div class="user-info__left">
+              <div class="user" style="background-color: #f70c9d;"><span class="first-name">А</span><span class="second-name">Б</span></div>
+              <div class="user-info__group">
+                <div class="user-info__name">Афанасий Борисенко</div>
+                <div class="user-info__status user-info__status--offline">Не в сети</div>
+              </div>
+            </div>
+            <div class="user-info__right">
+              <div class="user-info__close">
+                <svg width="24" height="24">
+                  <use xlink:href="./images/sprite.svg#close"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="dialog">
+            <div class="dialog-row">
+              <div class="dialog-row__text">
+                Hello! Finally found the time to write to you) I need your help in creating
+                interactive animations for my mobile application.
+              </div>
+              <div class="dialog-row__time">10:30</div>
+            </div>
+            <div class="dialog-row">
+              <div class="dialog-row__text">Can I send you files?</div>
+              <div class="dialog-row__time">10:31</div>
+            </div>
+            <div class="dialog-row dialog-row--personal">
+              <div class="dialog-row__text">Hey! Okay, send out.</div>
+              <div class="dialog-row__time">11:14</div>
+            </div>
+            <div class="dialog-row">
+              <div class="dialog-row__text">
+                Hello! Finally found the time to write to you) I need your help in creating
+                interactive animations for my mobile application.
+              </div>
+              <div class="dialog-row__time">10:30</div>
+            </div>
+            <div class="dialog-row">
+              <div class="dialog-row__text">Can I send you files?</div>
+              <div class="dialog-row__time">10:31</div>
+            </div>
+            <div class="dialog-row dialog-row--personal">
+              <div class="dialog-row__text">Hey! Okay, send out.</div>
+              <div class="dialog-row__time">11:14</div>
+            </div>
+          </div>
+          <div class="send">
+            <input class="send__input" type="text" placeholder="Написать сообщение">
+            <button class="send__button">
+              <svg width="24" height="24">
+                <use xlink:href="./images/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="js/main.min.js"></script>
+</html>

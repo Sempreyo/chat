@@ -1,0 +1,15 @@
+/* Base */
+@import "base/var";
+@import "base/mixin";
+@import "base/fonts";
+@import "base/animation";
+@import "base/global";
+
+/* Blocks */
+@import "blocks/new-messages-count";
+@import "blocks/user";
+@import "blocks/user-info";
+@import "blocks/dialog-row";
+@import "blocks/dialog";
+@import "blocks/send";
+@import "blocks/chat";
