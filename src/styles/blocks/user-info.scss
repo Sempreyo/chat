@@ -3,7 +3,8 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 20px;
-	padding: 25px;
+	min-height: 102px;
+	padding: 8px 25px;
 	border-top-right-radius: 20px;
 	background-color: $grey-fa;
 	border-bottom: 2px solid rgba(112, 124, 151, 0.1);
