@@ -105,18 +105,6 @@ textarea {
 	}
 }
 
-.d-none-desktop {
-	display: block !important;
-
-	@include min(ti) {
-		display: none !important;		
-	}
-}
-
-.d-none-mobile {
+[hidden] {
 	display: none !important;
-
-	@include min(ti) {
-		display: block !important;
-	}
 }

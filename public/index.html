@@ -14,10 +14,22 @@
         <div class="chat__label">
           <svg width="30" height="30">
             <use xlink:href="./images/sprite.svg#chat"></use>
-          </svg><span>Чат</span>
+          </svg>
           <div class="chat__new-messages-count new-messages-count">10</div>
         </div>
         <div class="chat__users">
+          <div class="chat__search">
+            <svg width="30" height="30">
+              <use xlink:href="./images/sprite.svg#search"></use>
+            </svg>
+            <select class="js-choose-person" hidden>
+              <option>ИЙ</option>
+              <option>КЛ</option>
+              <option>МН</option>
+              <option>ОП</option>
+              <option>РС</option>
+            </select>
+          </div>
           <div class="chat__user" data-id="qwerty1">
             <div class="user" style="background-color: #f70c9d;"><span class="first-name">А</span><span class="second-name">Б</span>
               <div class="user__new-messages-count new-messages-count">3</div>

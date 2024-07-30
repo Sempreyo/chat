@@ -10,9 +10,16 @@ block main
 	section.chat
 		.chat__label
 			+icon('chat')(width='30', height='30')
-			span Чат
 			.chat__new-messages-count.new-messages-count 10
 		.chat__users
+			.chat__search
+				+icon('search')(width='30', height='30')
+				select.js-choose-person(hidden)
+					option ИЙ
+					option КЛ
+					option МН
+					option ОП
+					option РС
 			.chat__user(data-id='qwerty1')
 				.user(style='background-color: #f70c9d;')
 					span.first-name А

@@ -25,7 +25,7 @@
 		position: absolute;
 		top: -40px;
 		left: 10px;
-		width: 120px;
+		width: auto;
 		height: 40px;
 		padding: 0 15px;
 		display: flex;
@@ -35,8 +35,6 @@
 		border-radius: 10px 10px 0 0;
 		background: linear-gradient(90deg, #7cb8f7 0%, #2a8bf2 100%);
 		box-shadow: 3px -3px 15px 0 rgba(0, 0, 0, 0.2);
-		font-size: 16px;
-		color: $white;
 		cursor: pointer;
 
 		&:hover svg {
@@ -50,25 +48,32 @@
 	}
 
 	&__new-messages-count {
-		position: absolute;
-		bottom: 3px;
-		right: 3px;
+		color: $white;
 	}
 
 	&__users {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		min-width: 70px;
 		max-width: 70px;
+		width: 100%;
 		height: 100%;
 		padding: 10px 0;
 		border-right: 1px solid rgba(112, 124, 151, 0.1);
 		overflow-y: auto;
+		transition: max-width 0.3s ease;
 
 		@include max(ti) {
 			max-width: 100%;
 			width: 100%;
+		}
+
+		&--select {
+			max-width: 200px;
+
+			@include max(ti) {
+				max-width: 100%;
+			}
 		}
 
 		&::-webkit-scrollbar {
@@ -81,12 +86,40 @@
 		}
 	}
 
+	&__search {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 62px;
+		padding: 0 10px;
+		cursor: pointer;
+
+		&:hover svg {
+			transform: scale(1.1);
+		}
+
+		svg {
+			transition: 0.3s ease;
+		}
+
+		select {
+			width: 100%;
+			border: 2px solid rgba(112, 124, 151, 0.1);
+			box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+			border-radius: 20px;
+			padding: 5px 10px;
+			cursor: pointer;
+		}
+	}
+
 	&__user {
 		position: relative;
 		display: flex;
 		justify-content: center;
 		width: 100%;
 		padding: 5px 0;
+		border-top: 2px solid rgba(112, 124, 151, 0.1);
 		cursor: pointer;
 
 		@include max(ti) {
@@ -94,10 +127,6 @@
 			justify-content: flex-start;
 			gap: 15px;
 			padding: 10px 40px 10px 20px;
-		}
-
-		&:not(:first-child) {
-			border-top: 2px solid rgba(112, 124, 151, 0.1);
 		}
 	}
 
