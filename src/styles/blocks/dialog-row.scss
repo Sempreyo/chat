@@ -2,15 +2,16 @@
 	$parent: &;
 
 	position: relative;
-	display: inline-block;
-	max-width: 75%;
-	background: linear-gradient(90deg, #60a9f6 0%, #2a8bf2 100%);
-	box-shadow: 10px 10px 25px rgba(42, 139, 242, 0.1), 15px 15px 35px rgba(42, 139, 242, 0.05), 10px 10px 50px rgba(42, 139, 242, 0.1);
-	border-radius: 0 10px 10px 10px;
-	padding: 15px 15px 20px;
+    display: inline-block;
+    max-width: 75%;
+	min-width: 90px;
+    background-color: #e6e6e6;
+    box-shadow: 10px 10px 25px rgba(230, 230, 230, .1), 15px 15px 35px rgba(230, 230, 230, .05), 10px 10px 50px rgba(230, 230, 230, .1);
+    border-radius: 0 10px 10px 10px;
+    padding: 15px 15px 20px;
 
 	&__text {
-		color: $white;
+		color: #000;
 		font-size: 14px;
 		line-height: 1.5;
 	}
@@ -19,19 +20,19 @@
 		position: absolute;
 		bottom: 4px;
 		right: 10px;
-		color: rgba(255, 255, 255, 0.7);
+		color: rgba(0, 0, 0, 0.7);
 		font-size: 10px;
 	}
 
 	&--personal {
 		align-self: flex-end;
-		background: $white;
-		border: 1px solid rgba(112, 124, 151, 0.25);
-		box-shadow: 10px 10px 25px rgba(112, 124, 151, 0.05), 15px 15px 35px rgba(112, 124, 151, 0.05);
+		background: #fff;
+		border: 1px solid rgba(112, 124, 151, .25);
+		box-shadow: 10px 10px 25px rgba(112, 124, 151, .05), 15px 15px 35px rgba(112, 124, 151, 0.05);
 
 		#{$parent} {
 			&__text {
-				color: $black;
+				color: #000;
 			}
 
 			&__time {

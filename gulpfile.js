@@ -62,7 +62,7 @@ function styles() {
 		.pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(sass())
-		.pipe(concat('main.min.css'))
+		.pipe(concat('chat.css'))
 		.pipe(autoprefixer({overrideBrowserslist: ['last 10 versions'], grid: true}))
 		.pipe(cleancss({level: {1: {specialComments: 0}}}))
 		.pipe(sourcemaps.write('./maps'))

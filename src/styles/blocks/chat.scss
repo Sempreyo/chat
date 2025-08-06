@@ -1,16 +1,16 @@
 .chat {
 	position: fixed;
-	bottom: 0;
-	left: 30px;
-	display: flex;
-	max-width: calc(100% - 60px);
-	width: 700px;
-	height: 500px;
-	background-color: $white;
-	border-radius: 20px 20px 0 0;
-	box-shadow: 6px -6px 30px 0 rgba(0, 0, 0, 0.2);
-	transform: translateY(100%);
-	transition: transform 0.3s ease;
+    bottom: 0;
+    left: 30px;
+    display: flex;
+    max-width: calc(100% - 60px);
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 6px -6px 30px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
 
 	@include max(t) {
 		left: 10px;
@@ -33,7 +33,7 @@
 		justify-content: flex-start;
 		gap: 10px;
 		border-radius: 10px 10px 0 0;
-		background: linear-gradient(90deg, #7cb8f7 0%, #2a8bf2 100%);
+		background: linear-gradient(90deg, #62c462 0, #51a351 100%);
 		box-shadow: 3px -3px 15px 0 rgba(0, 0, 0, 0.2);
 		cursor: pointer;
 
@@ -42,13 +42,13 @@
 		}
 
 		svg {
-			color: $white;
+			color: #fff;
 			transition: 0.3s ease;
 		}
 	}
 
 	&__new-messages-count {
-		color: $white;
+		color: #fff;
 	}
 
 	&__users {
@@ -58,9 +58,8 @@
 		max-width: 70px;
 		width: 100%;
 		height: 100%;
-		padding: 10px 0;
 		border-right: 1px solid rgba(112, 124, 151, 0.1);
-		overflow-y: auto;
+		overflow: auto;
 		transition: max-width 0.3s ease;
 
 		@include max(ti) {
@@ -81,7 +80,7 @@
 		}
 
 		&::-webkit-scrollbar-thumb {
-			background: $grey-9c;
+			background: #006dcc;
 			border-radius: 5px;
 		}
 	}
@@ -91,8 +90,9 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		height: 90px;
-		padding: 0 10px;
+		height: 60px;
+		padding: 10px;
+		box-sizing: border-box;
 		cursor: pointer;
 
 		&:hover svg {
@@ -100,27 +100,48 @@
 		}
 
 		svg {
+			color: #006dcc;
 			transition: 0.3s ease;
 		}
 
 		select {
-			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 70px;
+			z-index: 1;
+			width: calc(100% - 70px);
+			height: 60px;
 			border: 2px solid rgba(112, 124, 151, 0.1);
 			box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+			background-color: #fff;
 			border-radius: 20px;
 			padding: 5px 10px;
 			cursor: pointer;
+			font: inherit;
+			outline: 0;
+
+			@include max(t) {
+				left: 0;
+        		width: 100%;
+			}
 		}
+	}
+
+	#chat_contact {
+		width: 100%;
 	}
 
 	&__user {
 		position: relative;
 		display: flex;
+		align-items: center;
 		justify-content: center;
 		width: 100%;
+		height: auto;
 		padding: 5px 0;
 		border-top: 2px solid rgba(112, 124, 151, 0.1);
 		cursor: pointer;
+		box-sizing: border-box;
 
 		@include max(ti) {
 			align-items: center;

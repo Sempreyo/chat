@@ -1,13 +1,14 @@
 .user-info {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 20px;
-	min-height: 102px;
-	padding: 8px 25px;
-	border-top-right-radius: 20px;
-	background-color: $grey-fa;
-	border-bottom: 2px solid rgba(112, 124, 151, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 60px;
+    padding: 8px 25px;
+    border-top-right-radius: 20px;
+    background-color: #fbfbfb;
+    border-bottom: 2px solid rgba(112, 124, 151, 0.1);
+	box-sizing: border-box;
 
 	@include max(t) {
 		gap: 10px;
